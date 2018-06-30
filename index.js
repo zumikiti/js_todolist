@@ -52,7 +52,7 @@ function done(task) {
  * 完了ずみのタスク一覧の配列を取得する
  * @return {array}
  */
-function donelist(tasks) {
+function donelist() {
 	return Array.from(tasks)
 		.filter(isDone)
 		.map(t => t[0]);
